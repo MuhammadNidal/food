@@ -1,0 +1,258 @@
+{
+  "restaurants": [
+    {
+      "id": 1,
+      "name": "Sheriz Hotel",
+      "description": "A luxury experience with diverse culinary options.",
+      "image": "sheriz-hotel.jpg",
+      "categories": [
+        {
+          "name": "Fish",
+          "dishes": [
+            {
+              "name": "Grilled Salmon",
+              "image": "grilled-salmon.jpg",
+              "price": 15.99,
+              "description": "Freshly grilled salmon with a lemon butter sauce."
+            },
+            {
+              "name": "Fish Tacos",
+              "image": "fish-tacos.jpg",
+              "price": 9.99,
+              "description": "Crispy fish tacos served with fresh salsa."
+            },
+            {
+              "name": "Fried Fish",
+              "image": "fried-fish.jpg",
+              "price": 13.99,
+              "description": "Golden fried fish served with tartar sauce."
+            },
+            {
+              "name": "Fish Curry",
+              "image": "fish-curry.jpg",
+              "price": 14.99,
+              "description": "Spicy fish curry with steamed rice."
+            },
+            {
+              "id": 1,
+              "name": "Grilled Salmon",
+              "image": "Fish1",
+              "description": "A healthy and flavorful grilled salmon, seasoned to perfection.",
+              "price": 1200
+            },
+            {
+              "id": 2,
+              "name": "Fish Curry",
+              "image": "Fish3",
+              "description": "A spicy and tangy fish curry, cooked in traditional spices.",
+              "price": 800
+            },
+            {
+              "id": 3,
+              "name": "Baked Cod",
+              "image": "Fish4",
+              "description": "Tender cod baked with lemon and herbs.",
+              "price": 1000
+            },
+            {
+              "id": 4,
+              "name": "Fish Tacos",
+              "image": "Fish5",
+              "description": "Crispy fish tacos topped with fresh salsa and avocado.",
+              "price": 600
+            }
+          ]
+        },
+        {
+          "name": "Chicken",
+          "dishes": [
+            {
+              "name": "Chicken Biryani",
+              "image": "chicken-biryani.jpg",
+              "price": 12.99,
+              "description": "Spiced chicken biryani with fragrant basmati rice."
+            },
+            {
+              "name": "Fried Chicken",
+              "image": "fried-chicken.jpg",
+              "price": 10.99,
+              "description": "Crispy fried chicken served with a side of fries."
+            },
+            {
+              "name": "Chicken Tikka",
+              "image": "chicken-tikka.jpg",
+              "price": 11.99,
+              "description": "Grilled chicken tikka marinated in spices."
+            },
+            {
+              "name": "Chicken Karahi",
+              "image": "chicken-karahi.jpg",
+              "price": 13.99,
+              "description": "Traditional chicken karahi with green chilies."
+            },
+            {
+              "id": 5,
+              "name": "Chicken Biryani",
+              "image": "Chicken1",
+              "description": "Aromatic basmati rice layered with tender chicken and exotic spices.",
+              "price": 500
+            },
+            {
+              "id": 6,
+              "name": "Grilled Chicken",
+              "image": "Chicken2",
+              "description": "Juicy grilled chicken, marinated with herbs and spices.",
+              "price": 700
+            },
+            {
+              "id": 7,
+              "name": "Chicken Alfredo",
+              "image": "Chicken3",
+              "description": "Creamy Alfredo sauce with tender chicken over pasta.",
+              "price": 900
+            },
+            {
+              "id": 8,
+              "name": "Chicken Caesar Salad",
+              "image": "Chicken4",
+              "description": "Crispy chicken strips on a bed of romaine lettuce with Caesar dressing.",
+              "price": 600
+            }
+          ]
+        },
+        {
+          "name": "Kebabs",
+          "dishes": [
+            {
+              "id": 9,
+              "name": "Kebab Roll",
+              "image": "Kebab1",
+              "description": "Delicious kebabs rolled in soft naan bread, topped with fresh veggies.",
+              "price": 200
+            },
+            {
+              "id": 10,
+              "name": "Seekh Kebabs",
+              "image": "Kebab2",
+              "description": "Succulent seekh kebabs made from minced meat, seasoned with spices.",
+              "price": 300
+            },
+            {
+              "id": 11,
+              "name": "Shish Kebabs",
+              "image": "Kebab3",
+              "description": "Grilled skewers of marinated meat and vegetables.",
+              "price": 400
+            },
+            {
+              "id": 12,
+              "name": "Chicken Shawarma",
+              "image": "Kebab4",
+              "description": "Tender chicken shawarma served with garlic sauce and pita bread.",
+              "price": 250
+            }
+          ]
+        },
+        {
+          "name": "Rice",
+          "dishes": [
+            {
+              "id": 13,
+              "name": "Pulao",
+              "image": "Rice1",
+              "description": "Aromatic rice cooked with meat, vegetables, and a blend of spices.",
+              "price": 350
+            },
+            {
+              "id": 14,
+              "name": "Fried Rice",
+              "image": "Rice2",
+              "description": "Stir-fried rice with vegetables, eggs, and savory soy sauce.",
+              "price": 300
+            },
+            {
+              "id": 15,
+              "name": "Saffron Rice",
+              "image": "Rice3",
+              "description": "Fragrant rice infused with saffron and cooked to perfection.",
+              "price": 400
+            },
+            {
+              "id": 16,
+              "name": "Lemon Rice",
+              "image": "Rice4",
+              "description": "Rice cooked with a tangy lemon seasoning and garnished with peanuts.",
+              "price": 350
+            }
+          ]
+        },
+        {
+          "name": "Meat",
+          "dishes": [
+            {
+              "id": 17,
+              "name": "Beef Steak",
+              "image": "BeefSteak",
+              "description": "Tender beef steak cooked to your liking, served with sides.",
+              "price": 1500
+            },
+            {
+              "id": 18,
+              "name": "Lamb Chops",
+              "image": "LambChops",
+              "description": "Juicy lamb chops grilled to perfection, with a side of mint sauce.",
+              "price": 1300
+            },
+            {
+              "id": 19,
+              "name": "BBQ Ribs",
+              "image": "BeefSteak1",
+              "description": "Tender ribs smothered in a smoky BBQ sauce.",
+              "price": 1200
+            },
+            {
+              "id": 20,
+              "name": "Pork Belly",
+              "image": "LambChops1",
+              "description": "Crispy and succulent pork belly with a savory glaze.",
+              "price": 1100
+            }
+          ]
+        },
+        {
+          "name": "Starters",
+          "dishes": [
+            {
+              "id": 21,
+              "name": "Bruschetta",
+              "image": "Bruschetta1",
+              "description": "Toasted bread topped with a mixture of tomatoes, basil, and garlic.",
+              "price": 250
+            },
+            {
+              "id": 22,
+              "name": "Spring Rolls",
+              "image": "SpringRolls3",
+              "description": "Crispy rolls filled with fresh vegetables and served with a sweet and sour dipping sauce.",
+              "price": 200
+            },
+            {
+              "id": 23,
+              "name": "Stuffed Mushrooms",
+              "image": "Mushroom2",
+              "description": "Mushrooms stuffed with a mixture of cheese, herbs, and breadcrumbs.",
+              "price": 350
+            },
+            {
+              "id": 24,
+              "name": "Chicken Satay",
+              "image": "ChickenSatay4",
+              "description": "Grilled chicken skewers served with a rich peanut sauce.",
+              "price": 300
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

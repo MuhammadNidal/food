@@ -1,0 +1,169 @@
+/* styles.css */
+:root{
+  --bg-red:#e90505;
+  
+}
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--bg-red);
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #004d99;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar h1 {
+  font-size: 1.8rem;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul li {
+  margin-left: 2rem;
+  position: relative;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #66b2ff;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: 100%;
+  left: 0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown span {
+  cursor: pointer;
+}
+
+/* HomePage & ContactPage Styles */
+.home-page, .contact-page {
+  padding: 2rem;
+  text-align: center;
+}
+
+.home-page h2, .contact-page h2 {
+  font-size: 2rem;
+  color: #004d99;
+  margin-bottom: 1rem;
+}
+
+/* FoodService Styles */
+.food-service {
+  padding: 2rem;
+}
+
+.food-service h2 {
+  font-size: 2rem;
+  color: #004d99;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hotel-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+.hotel-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hotel-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.hotel-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #004d99;
+}
+
+.hotel-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #004d99;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.footer p {
+  margin: 0;
+}

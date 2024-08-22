@@ -1,0 +1,67 @@
+.hotel-detail {
+    padding: 20px;
+  }
+  
+  .category-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+  
+  .category-buttons button {
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px; /* More rounded corners */
+    background: linear-gradient(135deg, #0eb329 0%, #0bce5c 100%); /* Gradient background */
+    color: white;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.06); /* Soft shadow for depth */
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+  }
+  
+  .category-buttons button:hover {
+    background: linear-gradient(135deg, #05cfc5 0%, #0693be 100%); /* Reverse gradient on hover */
+    transform: translateY(-3px); /* Lift button slightly on hover */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15), 0px 4px 6px rgba(0, 0, 0, 0.1); /* Deeper shadow on hover */
+  }
+  
+  .category-buttons button:active {
+    transform: translateY(0); /* Return button to normal position when clicked */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.06); /* Slight shadow decrease on active */
+    background: linear-gradient(135deg, #26a08c79 0%, #19b105 100%); /* Darker gradient for active state */
+  }
+  
+  .dishes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .category-buttons {
+      flex-direction: column; /* Stack buttons vertically on smaller screens */
+      align-items: center; /* Center align buttons */
+    }
+    
+    .category-buttons button {
+      width: 100%; /* Full width buttons */
+      margin-bottom: 10px; /* Space between buttons */
+      font-size: 16px; /* Smaller font size on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .category-buttons button {
+      padding: 10px 20px; /* Reduced padding on very small screens */
+      font-size: 14px; /* Smaller font size */
+    }
+    
+    .dishes {
+      gap: 10px; /* Reduced gap between dishes */
+    }
+  }
+  

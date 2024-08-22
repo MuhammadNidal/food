@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.footer {
+  background-color:green; /* Dark background for contrast */
+  color: white;
+  padding: 2rem 1rem; /* Added more padding for better spacing */
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items to the top */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px; /* Increased minimum width */
+  margin: 0 15px;
+}
+
+.footer-section h4 {
+  font-size: 2.2rem; /* Increased heading font size */
+  margin-bottom: 0.5rem;
+  color: #ffcc00; /* Add color to headings */
+}
+
+.footer-section p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.footer-social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Increased gap between icons */
+  margin-top: 1rem;
+}
+
+.footer-social-icons a {
+  color: white; /* Match icon color with text color */
+  font-size: 1.5rem; /* Increased icon size */
+  transition: color 0.3s ease;
+}
+
+.footer-social-icons a:hover {
+  color: #ffcc00; /* Change color on hover */
+}
+
+.footer-bottom {
+  margin-top: 1.5rem;
+  border-top: 1px solid #444; /* Add a border for separation */
+  padding-top: 1rem;
+}
+
+.footer-bottom p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .footer-bottom {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-section h4 {
+    font-size: 1rem;
+  }
+
+  .footer-section p {
+    font-size: 0.8rem;
+  }
+
+  .footer-social-icons a {
+    font-size: 1.2rem;
+  }
+}

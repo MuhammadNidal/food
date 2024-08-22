@@ -1,0 +1,75 @@
+.dish-card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+  width: 100%; /* Full width of its container */
+  max-width: 300px; /* Optional: Set a max-width */
+  margin: 10px auto; /* Center the card with auto margins */
+}
+
+.dish-card-image {
+  height: 200px; /* Set a reasonable height */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: filter 0.3s ease;
+}
+
+.dish-card:hover .dish-card-image {
+  filter: brightness(0.9);
+}
+
+.dish-card-content {
+  padding: 16px;
+  text-align: center;
+}
+
+.dish-card-content h3 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.dish-card-content p {
+  margin: 0 0 15px;
+  font-size: 1rem;
+  color: #666;
+}
+
+.dish-card-content button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dish-card-content button:hover {
+  background-color: #0056b3;
+}
+
+/* Grid Layout */
+.dish-card-container {
+  display: grid;
+  gap: 20px; /* Space between cards */
+  grid-template-columns: repeat(3, 1fr); /* Three cards per row */
+  /* The grid will create exactly three columns of equal width */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .dish-card-container {
+    grid-template-columns: repeat(2, 1fr); /* Two cards per row on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .dish-card-container {
+    grid-template-columns: 1fr; /* One card per row on very small screens */
+  }
+}

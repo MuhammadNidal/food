@@ -1,0 +1,123 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure this is high enough */
+  }
+  
+  .modal-content {
+    position: relative; /* Added to position the close button correctly */
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333; /* Adjust color if needed */
+  }
+  
+  .close-button:hover {
+    color: red; /* Optional: color change on hover */
+  }
+  
+  .modal-left {
+    flex: 1;
+  }
+  
+  .modal-image {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+  }
+  
+  .modal-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .dropdown {
+    margin-bottom: 20px;
+  }
+  
+  .dropdown label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .dropdown-select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .dropdown-select:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .quantity-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .quantity-control button {
+    padding: 5px 10px;
+    font-size: 18px;
+  }
+  
+  .quantity-control span {
+    font-size: 18px;
+  }
+  
+  .modal-footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .total-price {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .add-to-cart-button {
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add-to-cart-button:hover {
+    background-color: darkred;
+  }
+  

@@ -1,0 +1,136 @@
+.navbar {
+  background-color: green;
+  padding: 10px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed; /* Fixed position to stay at the top */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width of the viewport */
+  z-index: 1000; /* Ensure it stays above other elements */
+}
+
+.navbar-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo-icon {
+  margin-right: 8px; /* Space between icon and text */
+  font-size: 1.8rem; /* Slightly larger than the text */
+}
+
+.navbar-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-menu-items {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu-items li {
+  margin: 0 10px;
+}
+
+.navbar-menu-items a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-search {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.navbar-search input {
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+}
+
+.search-button {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.navbar-notification {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  position: relative;
+}
+
+.notification-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: red;
+  color: #fff;
+  border-radius: 50%;
+  padding: 2px 5px;
+  font-size: 0.75rem;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px; /* Adjust based on the height of the navbar */
+    left: 0;
+    background-color: #333;
+  }
+
+  .navbar-menu.active {
+    display: flex;
+  }
+
+  .navbar-menu-items {
+    flex-direction: column;
+  }
+
+  .navbar-menu-items li {
+    margin: 10px 0;
+  }
+
+  .navbar-search {
+    margin: 20px 0;
+  }
+}
