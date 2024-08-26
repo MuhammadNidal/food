@@ -1,0 +1,20 @@
+.search_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    gap: 2rem;
+}
+.search_logo{
+    display: flex;
+    margin-top: 1rem;
+}
+.search_logo>img{
+    width: 15rem;
+    height: 8rem;
+}
+.custom-textfield .MuiOutlinedInput-root {
+    border-radius: 100px;
+  }
+  

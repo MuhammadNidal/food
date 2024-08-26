@@ -1,0 +1,174 @@
+/* Modal Container */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Slightly darker background for better focus */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure this is high enough */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative; /* Added to position the close button correctly */
+  background: #fff; /* Pure white background for clean look */
+  padding: 30px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Added shadow for depth */
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Close Button */
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #555; /* Subtle gray color */
+  transition: color 0.3s ease;
+}
+
+.close-button:hover {
+  color: red; /* Color change on hover */
+}
+
+/* Modal Left Section */
+.modal-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-image {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 320px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+}
+
+/* Modal Right Section */
+.modal-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Dropdown Styling */
+.dropdown {
+  margin-bottom: 20px;
+}
+
+.dropdown label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: 600;
+}
+
+.dropdown-select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background-color: #f7f7f7;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+.dropdown-select:focus {
+  border-color: #007bff;
+  outline: none;
+  background-color: #fff;
+}
+
+/* Quantity Control Styling */
+.quantity-control {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.quantity-control button {
+  padding: 8px 12px;
+  font-size: 18px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.quantity-control button:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.quantity-control span {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Modal Footer Styling */
+.modal-footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.total-price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Add to Cart Button */
+.add-to-cart-button {
+  padding: 12px 24px;
+  background-color: #28a745; /* Green color for action button */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .modal-content {
+      flex-direction: column;
+      width: 95%;
+  }
+
+  .modal-image {
+      height: 200px;
+  }
+
+  .modal-right {
+      margin-top: 20px;
+  }
+}
